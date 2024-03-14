@@ -34,6 +34,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var KEY = '57a96f5c53d54707a7d212508241403';
+// Event listeners
+var submitButton = document.getElementById('submit');
+var getLocation = function () {
+    var cityInput = document.getElementById('city');
+    var countryInput = document.getElementById('country');
+    var city = cityInput.value;
+    var country = countryInput.value;
+};
+var url = "https://api.weatherapi.com/v1/current.json?key=".concat(KEY, "&q=").concat(location);
 function getWeatherData() {
     return __awaiter(this, void 0, void 0, function () {
         var response, data;
